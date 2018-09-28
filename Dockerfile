@@ -1,6 +1,6 @@
 FROM wonderfall/nginx-php:7.2
 
-ARG NEXTCLOUD_VERSION=14.0.0
+ARG NEXTCLOUD_VERSION=14.0.1
 ARG GPG_nextcloud="2880 6A87 8AE4 23A2 8372  792E D758 99B9 A724 937A"
 
 ENV UID=991 GID=991 \
@@ -66,6 +66,6 @@ EXPOSE 8888
 
 LABEL description="A server software for creating file hosting services" \
       nextcloud="Nextcloud v${NEXTCLOUD_VERSION}" \
-      maintainer="Wonderfall <wonderfall@targaryen.house>"
+      maintainer="adam0428 <adam@szurmay.systems>"
 
 CMD ["run.sh"]
